@@ -17,17 +17,7 @@ public class GameDaoImpl implements GameDao {
     @Override
     public boolean gravar(Game g) {
 
-//        String gameCsv = Game.serializarGame(g);
-//        System.out.println(gameCsv);
-//
-//        try {
-//            Files.writeString(arquivo, gameCsv, StandardOpenOption.APPEND);
-//            System.out.println("Game gravado com sucesso!");
-//            return true;
-//        } catch (IOException e) {
-//            System.out.println("Ocorreu um erro na gravação do novo game.");
-//            return false;
-//        }
+        // TODO: Implementar o método para gravar o game.
 
         return true;
 
@@ -36,27 +26,7 @@ public class GameDaoImpl implements GameDao {
     @Override
     public List<Game> listar() {
 
-//        try {
-//            List<String> linhas = Files.readAllLines(arquivo);
-//
-//            linhas.forEach(linha -> {
-//                String[] gameStr = linha.split(";");
-//                Game gameObj = new Game(
-//                        Integer.parseInt(gameStr[0]),
-//                        gameStr[1],
-//                        gameStr[2],
-//                        Double.parseDouble(gameStr[3]),
-//                        Year.of(Integer.parseInt(gameStr[4]))
-//                );
-//                games.add(gameObj);
-//            });
-//
-//            return games;
-//
-//        } catch (IOException e) {
-//            System.out.println("Ocorreu um erro na leitura do arquivo!");
-//            throw new RuntimeException(e);
-//        }
+        // TODO: Implementar a listagem de games.
 
         return new ArrayList<>();
 
@@ -65,28 +35,7 @@ public class GameDaoImpl implements GameDao {
     @Override
     public Game buscarGamepeloId(int id) {
 
-//        Game gameEncontrado = new Game();
-//
-//        try {
-//            List<String> linhas = Files.readAllLines(arquivo);
-//
-//            linhas.forEach(linha -> {
-//                String[] gameStr = linha.split(";");
-//                if (Integer.parseInt(gameStr[0]) == id) {
-//                    gameEncontrado.setId(Integer.parseInt(gameStr[0]));
-//                    gameEncontrado.setTitulo(gameStr[1]);
-//                    gameEncontrado.setEstudio(gameStr[2]);
-//                    gameEncontrado.setValor(Double.parseDouble(gameStr[3]));
-//                    gameEncontrado.setAnoLancamento(Year.of(Integer.parseInt(gameStr[4])));
-//                }
-//            });
-//
-//            return gameEncontrado;
-//
-//        } catch (IOException e) {
-//            System.out.println("Ocorreu um erro na leitura do arquivo!");
-//            throw new RuntimeException(e);
-//        }
+        // TODO: Implementar a busca de games pelo ID.
 
         return new Game();
 
